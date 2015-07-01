@@ -1,0 +1,26 @@
+.b-modal {
+	width: 400px;
+	position: relative;
+
+	.b-form {
+		padding: 25px;
+	}
+
+	&__close {
+		width: 18px;
+		height: 18px;
+		position: absolute;
+		top: -30px;
+		right: 0;
+		background: url(../img/close.png) no-repeat center top;
+		cursor: pointer;
+	}
+}
+
+
+@media (max-width: @screen-md-min) {
+    .b-modal {
+		width: 100%
+
+	}
+}

@@ -1,0 +1,140 @@
+.b-slider {
+	background-image: url(../img/herobg.jpg);
+	.background-size(cover);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding: 30px 20px 10px 70px;
+
+	&__section {
+		padding-top: 2.222em;
+		padding-bottom: 2.222em;
+	}
+
+	&__item {
+		//padding-left: 3.333em;
+		//padding-bottom: 2.222em;
+		//padding-top: 2.222em;
+		//padding-right: 10px;
+		min-height: 218px;
+
+		> div {
+		}
+
+		&-img {
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			margin-top: -75px;
+
+			img {
+				max-width: 100%;
+			}
+
+		}
+
+		&-title {
+			font-size: 1.333em;
+			margin-bottom: .867em;
+		}
+
+		&-text {
+			line-height: 1.3;
+		}
+
+		&_3 &-img img {
+			max-width: 85%;
+		}
+
+		&_3 &-img {
+			text-align: right;
+			margin-top: -60px;
+		}
+	}
+
+	&__menu {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	font-size: 14px;
+    	margin-left: -1%;
+
+    	&-item {
+    		display: inline-block;
+    		vertical-align: top;
+    		width: 15.666%;
+    		margin-right: -0.25em;
+    		margin-left: 1%;
+    		margin-top: 1%;
+    		text-align: center;
+
+    		a {
+    			display: block;
+    			width: 100%;
+    			text-decoration: none !important;
+    			padding: 9px 3px;
+    			background-color: @gray;
+    			color: #000;
+    			font-weight: bold;
+    			.transition(all .3s ease-in-out);
+
+    			&:active {
+    				background-color: @orange;
+    				color: #fff;
+    			}
+
+    			&:active {
+    				background-color: darken(@gray, 10%);
+    				color: #fff;
+    			}
+
+
+    		}
+
+    		&.active {
+
+    			a {
+    				background-color: @orange;
+					color: #fff;
+    			}
+				
+			}
+    		
+    	}	
+    }
+}
+
+@media (max-width: @screen-md-min) {
+    .b-slider {
+        padding: 20px;
+    	&__item {
+    		padding-left: 10px;
+    		padding-right: 10px;
+    		min-height: 50px;
+
+    		&-img {
+    			display: none;
+    		}
+    	}
+
+    	&__menu {
+
+    		&-item {
+    			width: 32.333%;
+    		}
+    	}
+
+
+    }
+}
+
+@media (max-width: @screen-sm-min) {
+    .b-slider {
+
+    	&__menu {
+
+    		&-item {
+    			width: 49%;
+    		}
+    	}
+    }
+}

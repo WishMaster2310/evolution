@@ -1,0 +1,143 @@
+.b-feedGallery {
+
+	&__wrapper {
+		padding: 1.667em 0;
+		background: url(../img/promoproducts.jpg) no-repeat center top;
+		.background-size(cover);
+	}
+
+	&__item {
+		&-inner {
+			display: table;
+			width: 100%;
+			table-layout: fixed;
+		}
+
+		&-col {
+			display: table-cell;
+			vertical-align: middle;
+			
+
+			&_left {
+				background: #fff;
+				width: 32%;
+				padding: 1.5em 1em;
+				text-align: center;
+				border: 0;
+			}
+
+			&_right {
+				border: 3px solid #fff;
+				padding: 1em 2em;
+				font-size: 1.333em;
+				font-style: italic;
+				line-height: 1.3;
+				color: #fff;
+			}
+		}
+	}
+
+	.owl-stage-outer {
+		//margin-bottom: 20px;
+	}
+
+	.owl-controls {
+		.owl-dots {
+			text-align: center;
+			margin-top: 10px;
+			> div {
+				width: 24px;
+				height: 24px;
+				//background: #000;
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 10px;
+				//.border-radius(50%);
+				border: 3px solid #fff;
+				position: relative;
+				.transition(all .3s ease-in-out);
+				overflow: hidden;
+
+				&:before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					width: 12px;
+					height: 12px;
+					background: #fff;
+					display: block;
+					content: "";
+					margin: auto;
+					//.border-radius(50%);
+					.transition(all .3s ease-in-out);
+				}
+
+				&.active {
+					border-color: @yellow;
+
+					&:before  {
+						background: @yellow;
+						.transform(scale(1.5));
+						
+					}
+				}
+
+			}
+		}
+	}
+
+}
+
+.b-person {
+	&__img {
+		display: inline-block;
+		vertical-align: top;
+		width: 80px;
+		height: 80px;
+		overflow: hidden;
+		.border-radius(50%);
+		margin-bottom: .5em;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__name {
+		font-size: 1.333em;
+		font-weight: bold;
+		margin-bottom: .6666em;
+	}
+
+	&__post {
+		line-height: 1.2;
+	}
+}
+
+@media (max-width: @screen-sm-min) {
+    .b-feedGallery {
+
+		&__item {
+			&-inner {
+				display: block;
+			}
+
+			&-col {
+				display: block;
+
+				&_left {
+					width: 100%;
+				}
+
+				&_right {
+					padding: 1em;
+					background: fade(#000, 40%);
+				}
+
+			}
+		}
+
+	}
+}

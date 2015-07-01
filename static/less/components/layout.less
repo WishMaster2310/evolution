@@ -1,0 +1,34 @@
+* {
+	.box-sizing(border-box);
+}
+html {
+font-size: @font-size-base;	
+}
+body {
+	//min-width: (@grid-min-width + 2*@grid-gutter)*1px;
+	font-family: @font-base;
+	font-size: @font-size-base;
+	color: @font-color;
+}
+
+
+.b-h1 {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 1.111em;
+}
+
+
+.b-icon {
+  display: inline-block;
+  vertical-align: text-top;
+  background-repeat: no-repeat;
+  background-image: url(../img/sprite.png);
+}
+
+
+@media (max-width: @screen-md-min) {
+    body {
+    	font-size: 16px;
+    }
+}

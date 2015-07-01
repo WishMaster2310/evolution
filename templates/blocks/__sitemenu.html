@@ -1,0 +1,15 @@
+
+<div class="b-sitemenu__wrapper">
+	<div class="b-sitemenu__close">
+		<i class="b-icon b-icon__close j-menuToggle"></i>
+	</div>	
+	<div class="b-sitemenu__inner">
+		<ul class="b-sitemenu">
+			{% for menu in base.sitemenu  %}
+				<li class="b-sitemenu__item {% if menu.mod %}b-sitemenu__item_{{ menu.mod }}{% endif %}">
+					<a href="{{ menu.url }}">{{ menu.name }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

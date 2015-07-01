@@ -1,0 +1,55 @@
+.b-form {
+
+	.animated();
+
+
+	&_yellow {
+		background-color: @yellow;
+		padding: 1.7em 1.111em;
+		width: 100%;
+		display: block;
+	}
+
+	&__title {
+		font-size: 1.333em;
+		margin-bottom: 10px;
+		
+	}
+
+	&__text {
+		//margin-bottom: 1.111em;
+		line-height: 1.2;
+		&_result  {
+			display: none;
+		}
+	}
+
+	&.i-active {
+		
+	}
+
+	&.i-active &__text  {
+		display: none;
+
+		&_result  {
+			display: block;
+		}
+
+	}
+
+	&__control {
+		display: block;
+		width: 100%;
+		height: 46px;
+		height: 2.556rem;
+		padding: 0px 15px;
+		border: 1px solid #fff;
+		outline: none;
+		font-size: 1em;
+		font-family: @font-base;
+	}
+
+	&__data {
+
+	}
+}

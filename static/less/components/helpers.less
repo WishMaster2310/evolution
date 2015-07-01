@@ -1,0 +1,48 @@
+.i-bold {
+	font-weight: bold;
+}
+
+.i-orange {
+	color: @orange;
+}
+
+.i-white {
+	color: #fff;
+}
+
+.i-text {
+	&_center {
+		text-align: center;
+	}
+}
+
+.i-clearfix {
+	.clearfix()
+}
+
+.i-mb {
+
+	&_10 {
+		margin-bottom: 10px;
+	}
+
+	&_15 {
+		margin-bottom: 15px;
+		margin-bottom: 0.833rem;
+	}
+
+	&_20 {
+		margin-bottom: 20px;
+		margin-bottom: 1.111rem;
+	}
+}
+
+.i-visible_sm {
+	display: none;
+}
+
+@media (max-width: @screen-sm-min) {
+    .i-visible_sm {
+		display: block;
+    }
+}

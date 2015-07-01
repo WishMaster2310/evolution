@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta charset="utf-8">
+        <title>1С Развитие</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="static/css/style.css" media="screen">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+        <script src="static/lib/jquery-1.11.3.min.js"></script>
+        <script src="static/lib/owl.carousel.min.js"></script>
+        <script src="static/lib/jquery.maskedinput.min.js"></script>
+        <script src="static/lib/velocity.min.js"></script>
+        <script src="static/lib/jquery.arcticmodal-0.3.min.js"></script>
+        <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script src="static/js/func.js"></script>
+    </head>
+    <body class="b-page">
+        <header class="b-header">
+            <div class="b-hamburger j-menuToggle"><i class="b-icon b-icon__menu"></i></div>
+            <div class="b-container">
+                <div class="b-row">
+                    <div class="b-col_sm_6">
+                        <a class="b-header__logo" href="/">
+                            <img src="static/img/logo.png" alt="1С Развитие">
+                        </a>
+                    </div>
+                    <div class="b-col_sm_6">
+                        <div class="b-header__phone">
+                            <p class="b-header__phone-number i-bold"><span class="i-orange">8 (343)</span> 266-456-4</p>
+                            <p class="b-header__phone-info">Ждем звонка с&nbsp;9:00 до&nbsp;21:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- <span class="b-header__logo-name i-bold"><ins  class="i-orange">1С</ins> РАЗВИТИЕ</span>
+<span class="b-header__logo-info">Продажа. Внедрение. Развитие</span>
+<span class="b-logoTreangle">
+	<i class="b-logoTreangle_1"></i>
+	<i class="b-logoTreangle_2"></i>
+	<i class="b-logoTreangle_3"></i>
+</span> -->
+        <div class="b-sitemenu__wrapper">
+            <div class="b-sitemenu__close">
+                <i class="b-icon b-icon__close j-menuToggle"></i>
+            </div>
+            <div class="b-sitemenu__inner">
+                <ul class="b-sitemenu">
+                    <li class="b-sitemenu__item ">
+                        <a href="#">Главная страница</a>
+                    </li>
+                    <li class="b-sitemenu__item ">
+                        <a href="#">Продажа Программ </a>
+                    </li>
+                    <li class="b-sitemenu__item ">
+                        <a href="#">Внедрение 1С</a>
+                    </li>
+                    <li class="b-sitemenu__item ">
+                        <a href="#">Техподдержка (поддержка) и обслуживание 1С</a>
+                    </li>
+                    <li class="b-sitemenu__item ">
+                        <a href="#">ИТС</a>
+                    </li>
+                    <li class="b-sitemenu__item ">
+                        <a href="#">Отрослевая автоматизация</a>
+                    </li>
+                    <li class="b-sitemenu__item ">
+                        <a href="#">Продажа торгового оборудования</a>
+                    </li>
+                    <li class="b-sitemenu__item ">
+                        <a href="#">1C Outsourcing </a>
+                    </li>
+                    <li class="b-sitemenu__item ">
+                        <a href="#">Сервисы 1С</a>
+                    </li>
+                    <li class="b-sitemenu__item ">
+                        <a href="#">1С Фреш (облако)</a>
+                    </li>
+                    <li class="b-sitemenu__item ">
+                        <a href="#">Продажа сопутствующего программного обеспечения</a>
+                    </li>
+                    <li class="b-sitemenu__item b-sitemenu__item_selected">
+                        <a href="#">Создание сайтов на 1С Bitrix</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="b-hero">
+            <div class="b-container">
+                <div class="b-row">
+                    <div class="b-col_md_7">
+                        <h1 class="b-hero__title i-orange i-bold">Продажа 1С: Бухгалтерия 8</h1>
+                        <p class="b-hero__text i-bold">
+                            Лучшее решение для ведения бухгалтерии и&nbsp;сдачи финансовой отчетности
+                        </p>
+                    </div>
+                </div>
+                <div class="b-row">
+                    <div class="b-col_md_5">
+                        <div class="b-form b-form_yellow">
+                            <p class="b-form__title i-bold i-text_center">Заявка на расчет</p>
+                            <p class="b-form__text i-text_center i-mb_20">предоставим в течение 10 минут</p>
+                            <p class="b-form__text i-text_center i-mb_20 b-form__text_result">Ваша заявка принята. Спасибо!</p>
+                            <form class="b-form__data">
+                                <input type="tel" name="tel" class="b-form__control i-mb_15  j-tel " required placeholder="Телефон*">
+                                <input type="hidden" name="reqid" class="b-form__helper" value="Заявка на расчет">
+                                <button type="submit" class="b-btn b-btn_block j-submit">Отправить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-hero__screens">
+                    <div class="b-hero__screens-item b-hero__screens-item_1">
+                        <img src="static/img/screen1.jpg" alt="">
+                    </div>
+                    <div class="b-hero__screens-item b-hero__screens-item_2">
+                        <img src="static/img/screen2.jpg" alt="">
+                    </div>
+                    <div class="b-hero__screens-item b-hero__screens-item_3">
+                        <img src="static/img/screen3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="b-advantages">
+            <div class="b-container">
+                <div class="b-row">
+                    <div class="b-col_md_3 b-col_xs_6 ">
+                        <figure class="b-advantages__item">
+                            <div class="b-advantages__item-icon">
+                                <i class="b-icon b-icon__search"></i>
+                            </div>
+                            <figcaption class="b-advantages__item-data">
+                                <div class="b-advantages__item-title i-bold">Бесплатно</div>
+                                <div class="b-advantages__item-text">поможем выбрать продукт</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="b-col_md_3 b-col_xs_6">
+                        <figure class="b-advantages__item">
+                            <div class="b-advantages__item-icon">
+                                <i class="b-icon b-icon__study"></i>
+                            </div>
+                            <figcaption class="b-advantages__item-data">
+                                <div class="b-advantages__item-title i-bold">Бесплатно</div>
+                                <div class="b-advantages__item-text">установим
+                                    <br> и&nbsp;обучим</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="b-col_md_3 b-col_xs_6">
+                        <figure class="b-advantages__item">
+                            <div class="b-advantages__item-icon">
+                                <i class="b-icon b-icon__delivery"></i>
+                            </div>
+                            <figcaption class="b-advantages__item-data">
+                                <div class="b-advantages__item-title i-bold">1 день</div>
+                                <div class="b-advantages__item-text">время доставки продукта</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="b-col_md_3 b-col_xs_6">
+                        <figure class="b-advantages__item">
+                            <div class="b-advantages__item-icon">
+                                <i class="b-icon b-icon__pistons"></i>
+                            </div>
+                            <figcaption class="b-advantages__item-data">
+                                <div class="b-advantages__item-title i-bold">3 месяца</div>
+                                <div class="b-advantages__item-text">техподдержки в&nbsp;подарок</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="b-promoproducts">
+            <div class="b-container">
+                <h2 class="b-h1 i-white i-text_center">Какая редакция решит задачи Вашего бизнеса?</h2>
+                <div class="b-row">
+                    <!-- item -->
+                    <div class="b-col_md_4 b-col_sm_6">
+                        <div class="b-promoproduct">
+                            <div class="b-promoproduct__header i-bold">
+                                1С: Бухгалтерия
+                                <br> Базовая
+                            </div>
+                            <div class="b-promoproduct__content">
+                                <div class="b-promoproduct__content-price">
+                                    3 300 руб.
+                                </div>
+                                <ul class="b-promoproduct__content-list">
+                                    <li>Готовое решение для ведения бухгалтерского и&nbsp;налогового учета</li>
+                                    <li>Подходит для небольших организаций с одним бухгалтером</li>
+                                    <li>Не требует платных обновлений</li>
+                                    <li>Позволяет вести учет нескольких организаций в отдельных базах</li>
+                                </ul>
+                            </div>
+                            <div class="b-promoproduct__footer">
+                                <a href="#" data-target="#modalForm1" class="b-btn b-btn_block b-btn_orange j-modal">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="b-col_md_4 b-col_sm_6">
+                        <div class="b-promoproduct b-promoproduct_selected">
+                            <div class="b-promoproduct__header i-bold">
+                                1С: Бухгалтерия
+                                <br> ПРОФ
+                            </div>
+                            <div class="b-promoproduct__content">
+                                <div class="b-promoproduct__content-price">
+                                    от 13 000 руб.
+                                </div>
+                                <ul class="b-promoproduct__content-list">
+                                    <li>Идеально подходит для многопользовательской работы</li>
+                                    <li>Позволяет доработать программу под бизнес-процессы вашего предприятия</li>
+                                    <li>Дает возможность вести учет по разным организациям в одной информационной базе</li>
+                                </ul>
+                            </div>
+                            <div class="b-promoproduct__footer">
+                                <a href="#" data-target="#modalForm2" class="b-btn b-btn_block b-btn_yellow j-modal">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="i-clearfix i-visible_sm"></div>
+                    <!-- item -->
+                    <div class="b-col_md_4 b-col_sm_6 ">
+                        <div class="b-promoproduct">
+                            <div class="b-promoproduct__header i-bold">
+                                1С: Бухгалтерия
+                                <br> КОРП
+                            </div>
+                            <div class="b-promoproduct__content">
+                                <div class="b-promoproduct__content-price">
+                                    от 13 000 руб.
+                                </div>
+                                <p class="i-text_center i-mb_10"><img src="static/img/brilliant.png" alt=""></p>
+                                <ul class="b-promoproduct__content-list">
+                                    <li>Создано для крупных предприятий с&nbsp;распределенной филиальной сетью или дочерними структурами</li>
+                                    <li>Позволяет вести учет в&nbsp;обособленных подразделениях</li>
+                                </ul>
+                            </div>
+                            <div class="b-promoproduct__footer">
+                                <a href="#" data-target="#modalForm2" class="b-btn b-btn_block b-btn_orange j-modal">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="b-form b-form_yellow">
+            <div class="b-container">
+                <div class="b-row">
+                    <div class="b-col_md_8 b-col_md_offset_2">
+                        <p class="b-form__title i-bold i-text_center">Не знаете какую редакцию выбрать?</p>
+                        <p class="b-form__text i-text_center i-mb_20">Наши консультанты помогут выбрать нужный продукт
+                            <br>для Вашего бизнеса и отправят расчет в течение 10 минут</p>
+                        <p class="b-form__text i-text_center i-mb_20 b-form__text_result">Ваша заявка принята. Спасибо!</p>
+                        <form action="" class="b-form__data">
+                            <div class="b-row">
+                                <div class="b-col_md_6">
+                                    <input type="tel" class="b-form__control j-tel i-mb_15" required placeholder="Телефон*">
+                                    <input type="hidden" name="reqid" value="Не знаете какую редакцию выбрать?">
+                                </div>
+                                <div class="b-col_md_6">
+                                    <button type="submit" class="b-btn b-btn_block j-submit">Отправить заявку</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="b-slider__section">
+            <div class="b-container">
+                <h2 class="b-h1 i-text_center">Думаете как подготовить программу для вашего бизнеса?</h2>
+                <div class="b-slider">
+                    <!-- item -->
+                    <div class="b-slider__item b-slider__item_1">
+                        <div>
+                            <div class="b-slider__item-img">
+                                <img src="static/img/slider1.png" alt="Лучшие профессионалы в одной команде">
+                            </div>
+                            <div class="b-row">
+                                <div class="b-col_md_7">
+                                    <h2 class="b-slider__item-title i-orange i-bold">Лучшие профессионалы в одной команде</h2>
+                                    <p class="b-slider__item-text">Наличие всех необходимых статусов и&nbsp;обширный опыт. Позвольте признанным мастерам своего дела применить свои знания на&nbsp;благо вашей компании. Мы&nbsp;любим свою работу и&nbsp;ценим отношения с&nbsp;клиентами!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="b-slider__item b-slider__item_2">
+                        <div>
+                            <div class="b-slider__item-img">
+                                <img src="static/img/slider2.png" alt="Оплата за результат">
+                            </div>
+                            <div class="b-row">
+                                <div class="b-col_md_7">
+                                    <h2 class="b-slider__item-title i-orange i-bold">Оплата за результат</h2>
+                                    <p class="b-slider__item-text">Проект разбивается на&nbsp;этапы. Оплата по&nbsp;итогам каждого этапа. Позвольте признанным мастерам своего дела применить свои знания на&nbsp;благо вашей компании.
+                                        <br>Мы любим свою работу и&nbsp;ценим отношения с&nbsp;клиентами!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="b-slider__item b-slider__item_3">
+                        <div>
+                            <div class="b-slider__item-img">
+                                <img src="static/img/slider3.png" alt="ТЗ и План-Граффик">
+                            </div>
+                            <div class="b-row">
+                                <div class="b-col_md_7">
+                                    <h2 class="b-slider__item-title i-orange i-bold">ТЗ и План-Граффик</h2>
+                                    <p class="b-slider__item-text">Жесткое соблюдение сроков, включая штрафы за&nbsp;срыв. Позвольте признанным мастерам своего дела применить свои знания на&nbsp;благо вашей компании. Мы&nbsp;любим свою работу и&nbsp;ценим отношения с&nbsp;клиентами!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="b-slider__item b-slider__item_4">
+                        <div>
+                            <div class="b-slider__item-img">
+                                <img src="static/img/slider4.png" alt="Прозрачность выполнения проекта">
+                            </div>
+                            <div class="b-row">
+                                <div class="b-col_md_7">
+                                    <h2 class="b-slider__item-title i-orange i-bold">Прозрачность выполнения проекта</h2>
+                                    <p class="b-slider__item-text">Task Manger и&nbsp;оперативная отчетность покажут на&nbsp;какой мы&nbsp;стадии. Позвольте признанным мастерам своего дела применить свои знания на&nbsp;благо вашей компании.
+                                        <br>Мы любим свою работу и&nbsp;ценим отношения с&nbsp;клиентами!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="b-slider__item b-slider__item_5">
+                        <div>
+                            <div class="b-slider__item-img">
+                                <img src="static/img/slider5.png" alt="Поддержка на 3 месяца в подарок">
+                            </div>
+                            <div class="b-row">
+                                <div class="b-col_md_7">
+                                    <h2 class="b-slider__item-title i-orange i-bold">Поддержка на 3 месяца в подарок</h2>
+                                    <p class="b-slider__item-text">Наличие всех необходимых статусов и&nbsp;обширный опыт. Позвольте признанным мастерам своего дела применить свои знания на&nbsp;благо вашей компании. Мы&nbsp;любим свою работу и&nbsp;ценим отношения с&nbsp;клиентами!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="b-slider__item b-slider__item_6">
+                        <div>
+                            <div class="b-slider__item-img">
+                                <img src="static/img/slider6.png" alt="Проведение обучения для пользователей">
+                            </div>
+                            <div class="b-row">
+                                <div class="b-col_md_7">
+                                    <h2 class="b-slider__item-title i-orange i-bold">Проведение обучения для пользователей</h2>
+                                    <p class="b-slider__item-text">Наличие всех необходимых статусов и&nbsp;обширный опыт. Позвольте признанным мастерам своего дела применить свои знания на&nbsp;благо вашей компании. Мы&nbsp;любим свою работу и&nbsp;ценим отношения с&nbsp;клиентами!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="b-slider__menu">
+                    <li class="b-slider__menu-item">
+                        <a href="#" class="b-slider__menu-item--link" data-slide="1">Профессионалы</a>
+                    </li>
+                    <li class="b-slider__menu-item">
+                        <a href="#" class="b-slider__menu-item--link" data-slide="2">Оплата за результат</a>
+                    </li>
+                    <li class="b-slider__menu-item">
+                        <a href="#" class="b-slider__menu-item--link" data-slide="3">ТЗ и План-Граффик</a>
+                    </li>
+                    <li class="b-slider__menu-item">
+                        <a href="#" class="b-slider__menu-item--link" data-slide="4">Прозрачность</a>
+                    </li>
+                    <li class="b-slider__menu-item">
+                        <a href="#" class="b-slider__menu-item--link" data-slide="5">Техподдержка</a>
+                    </li>
+                    <li class="b-slider__menu-item">
+                        <a href="#" class="b-slider__menu-item--link" data-slide="6">Обучение</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="b-support__wrapper">
+            <div class="b-container">
+                <h2 class="b-h1 i-text_center">Требуется оперативная поддержка?</h2>
+                <ul class="b-support">
+                    <li class="b-support__item">
+                        <div class="b-support__item-icon">
+                            <i class="b-icon b-icon__case"></i>
+                        </div>
+                        <div class="b-support__item-title">Профессионалы</div>
+                        <div class="b-support__item-text">Наличие всех необходимых статусов и&nbsp;обширный опыт</div>
+                    </li>
+                    <li class="b-support__item">
+                        <div class="b-support__item-icon">
+                            <i class="b-icon b-icon__culc"></i>
+                        </div>
+                        <div class="b-support__item-title">Оптимальная тарификация</div>
+                        <div class="b-support__item-text">Как месячные пакеты, так и&nbsp;поминутные</div>
+                    </li>
+                    <li class="b-support__item">
+                        <div class="b-support__item-icon">
+                            <i class="b-icon b-icon__secure"></i>
+                        </div>
+                        <div class="b-support__item-title">Гарантия на&nbsp;все работы</div>
+                        <div class="b-support__item-text">включая бесперебойность работы системы</div>
+                    </li>
+                    <li class="b-support__item">
+                        <div class="b-support__item-icon">
+                            <i class="b-icon b-icon__folder"></i>
+                        </div>
+                        <div class="b-support__item-title">Прозрачность выполнения проекта</div>
+                        <div class="b-support__item-text">Task Manager и&nbsp;оперативная отчетность</div>
+                    </li>
+                    <li class="b-support__item">
+                        <div class="b-support__item-icon">
+                            <i class="b-icon b-icon__1s"></i>
+                        </div>
+                        <div class="b-support__item-title">Доступность 24/7</div>
+                        <div class="b-support__item-text">Возможность связаться с&nbsp;нами в&nbsp;любое время и&nbsp;по любому каналу</div>
+                    </li>
+                    <li class="b-support__item">
+                        <div class="b-support__item-icon">
+                            <i class="b-icon b-icon__study2"></i>
+                        </div>
+                        <div class="b-support__item-title">Обучение пользователей</div>
+                        <div class="b-support__item-text">Проведение обучения для&nbsp;пользователей</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="b-form b-form_yellow">
+            <div class="b-container">
+                <div class="b-row">
+                    <div class="b-col_md_8 b-col_md_offset_2">
+                        <p class="b-form__title i-bold i-text_center">Есть вопросы по работе с 1С:Бухгалтерия?</p>
+                        <p class="b-form__text i-text_center i-mb_20">Обратитесь, и мы решим их в течение 10 минут</p>
+                        <p class="b-form__text i-text_center i-mb_20 b-form__text_result">Ваша заявка принята. Спасибо!</p>
+                        <form action="" class="b-form__data">
+                            <div class="b-row">
+                                <div class="b-col_md_6">
+                                    <input type="tel" class="b-form__control j-tel i-mb_15" required placeholder="Телефон*">
+                                    <input type="hidden" name="reqid" value="вопросы по работе">
+                                </div>
+                                <div class="b-col_md_6">
+                                    <button type="submit" class="b-btn b-btn_block j-submit">Отправить заявку</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="b-feedGallery__wrapper">
+            <div class="b-container">
+                <h2 class="b-h1 i-text_center i-white">Отзывы наших клиентов</h2>
+                <div class="b-feedGallery">
+                    <!-- item -->
+                    <div class="b-feedGallery__item b-feedGallery__item_1">
+                        <div class="b-feedGallery__item-inner">
+                            <div class="b-feedGallery__item-col b-feedGallery__item-col_left">
+                                <div class="b-preson">
+                                    <div class="b-person__img">
+                                        <img src="static/img/kolyasnikov.jpg" alt="Колясников Анатолий">
+                                    </div>
+                                    <div class="b-person__name">Колясников Анатолий</div>
+                                    <div class="b-person__post">генеральный директор «Восток Бизнес Групп»</div>
+                                </div>
+                            </div>
+                            <div class="b-feedGallery__item-col b-feedGallery__item-col_right">Скорость нашего бизнеса вынуждает требовать оперативной реакции на каждый запрос.
+                                <br>«1С Развитие» — единственные, кто справляется с&nbsp;темпом, выдерживая сроки каждого проекта.</div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="b-feedGallery__item b-feedGallery__item_2">
+                        <div class="b-feedGallery__item-inner">
+                            <div class="b-feedGallery__item-col b-feedGallery__item-col_left">
+                                <div class="b-preson">
+                                    <div class="b-person__img">
+                                        <img src="static/img/vashlyaev.jpg" alt="Вашляев Максим">
+                                    </div>
+                                    <div class="b-person__name">Вашляев Максим</div>
+                                    <div class="b-person__post">генеральный директор «Армада»</div>
+                                </div>
+                            </div>
+                            <div class="b-feedGallery__item-col b-feedGallery__item-col_right">Поразил системный подход и глубокое погрушение
+                                <br />в задачи бизнес подразделений. Благодаря
+                                <br />«1С Развитие» мы смогли реализовать все самые смелые и, даже, не типичные для 1С идеи.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-clients__wrapper">
+            <div class="b-container">
+                <h2 class="b-h1 i-text_center">Мы работаем с компаниями из разных отраслей</h2>
+                <div class="b-clients">
+                    <div class="b-clients__item b-clients__item_1 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli1_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli1.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_2 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli2_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli2.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_3 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli3_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli3.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_4 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli4_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli4.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_5 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli5_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli5.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_6 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli6_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli6.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_7 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli7_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli7.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_8 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli8_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli8.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_9 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli9_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli9.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_10 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli10_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli10.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_11 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli11_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli11.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_12 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli12_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli12.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_13 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli13_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli13.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_14 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli14_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli14.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_15 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli15_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli15.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                    <div class="b-clients__item b-clients__item_16 j-modal" data-target="#modalForm4">
+                        <div class="b-clients__item-inner">
+                            <img src="static/img/cli16_h.jpg" alt="" class="b-clients__item-img_hover">
+                            <img src="static/img/cli16.jpg" alt="" class="b-clients__item-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-clients__progress">
+                <div class="b-clients__progress-bar"></div>
+            </div>
+        </div>
+        <section class="b-form b-form_yellow">
+            <div class="b-container">
+                <div class="b-row">
+                    <div class="b-col_md_8 b-col_md_offset_2">
+                        <p class="b-form__title i-bold i-text_center">Есть вопросы по работе с 1С:Бухгалтерия?</p>
+                        <p class="b-form__text i-text_center i-mb_20">Обратитесь, и мы решим их в течение 10 минут</p>
+                        <p class="b-form__text i-text_center i-mb_20 b-form__text_result">Ваша заявка принята. Спасибо!</p>
+                        <form action="" class="b-form__data">
+                            <div class="b-row">
+                                <div class="b-col_md_6">
+                                    <input type="tel" class="b-form__control j-tel i-mb_15" required placeholder="Телефон*">
+                                    <input type="hidden" name="reqid" value="вопросы по работе">
+                                </div>
+                                <div class="b-col_md_6">
+                                    <button type="submit" class="b-btn b-btn_block j-submit">Отправить заявку</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="b-map__wrapper">
+            <div class="b-map" id="map"></div>
+        </div>
+        <footer class="b-footer">
+            <div class="b-container">
+                <div class="b-col_sm_6">
+                    <div class="b-footer__logo">
+                        <img src="static/img/footer_logo.png" alt="1С Развитие">
+                    </div>
+                </div>
+                <div class="b-col_sm_6">
+                    <div class="b-header__phone i-white">
+                        <p class="b-header__phone-number i-bold"><span class="i-orange">8 (343)</span> 266-456-4</p>
+                        <p class="b-header__phone-info">Ждем звонка с&nbsp;9:00 до&nbsp;21:00</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div style="display: none;">
+            <div class="b-modal b-modal_form" id="modalForm1">
+                <div class="b-form b-form_yellow">
+                    <p class="b-form__title i-bold i-text_center">Отличный выбор!</p>
+                    <p class="b-form__text i-text_center i-mb_20">Для оформления заказа оставьте свой номер телефона. Приветливый консультант свяжется с вами в течении 10 минут!</p>
+                    <p class="b-form__text i-text_center i-mb_20 b-form__text_result">Ваша заявка принята. Спасибо!</p>
+                    <form action="" class="b-form__data">
+                        <div>
+                            <input type="tel" class="b-form__control j-tel i-mb_15" required placeholder="Телефон*">
+                            <input type="hidden" name="reqid" value="1С: Бухгалтерия Базовая">
+                        </div>
+                        <div>
+                            <button type="submit" class="b-btn b-btn_block j-submit">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="b-modal__close"></div>
+            </div>
+            <div class="b-modal b-modal_form" id="modalForm2">
+                <div class="b-form b-form_yellow">
+                    <p class="b-form__title i-bold i-text_center">Отличный выбор!</p>
+                    <p class="b-form__text i-text_center i-mb_20">Для оформления заказа оставьте свой номер телефона. Приветливый консультант свяжется с вами в течении 10 минут!</p>
+                    <p class="b-form__text i-text_center i-mb_20 b-form__text_result">Ваша заявка принята. Спасибо!</p>
+                    <form action="" class="b-form__data">
+                        <div>
+                            <input type="tel" class="b-form__control j-tel i-mb_15" required placeholder="Телефон*">
+                            <input type="hidden" name="reqid" value="1С: Бухгалтерия ПРОФ">
+                        </div>
+                        <div>
+                            <button type="submit" class="b-btn b-btn_block j-submit">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="b-modal__close"></div>
+            </div>
+            <div class="b-modal b-modal_form" id="modalForm3">
+                <div class="b-form b-form_yellow">
+                    <p class="b-form__title i-bold i-text_center">Отличный выбор!</p>
+                    <p class="b-form__text i-text_center i-mb_20">Для оформления заказа оставьте свой номер телефона. Приветливый консультант свяжется с вами в течении 10 минут!</p>
+                    <p class="b-form__text i-text_center i-mb_20 b-form__text_result">Ваша заявка принята. Спасибо!</p>
+                    <form action="" class="b-form__data">
+                        <div>
+                            <input type="tel" class="b-form__control j-tel i-mb_15" required placeholder="Телефон*">
+                            <input type="hidden" name="reqid" value="1С: Бухгалтерия КОРП">
+                        </div>
+                        <div>
+                            <button type="submit" class="b-btn b-btn_block j-submit">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="b-modal__close"></div>
+            </div>
+            <div class="b-modal b-modal_form" id="modalForm4">
+                <div class="b-form b-form_yellow">
+                    <p class="b-form__title i-bold i-text_center">Есть вопросы по работе с&nbsp;1С:Бухгалтерия?</p>
+                    <p class="b-form__text i-text_center i-mb_20">Обратитесь, и мы решим их в течение 10&nbsp;минут</p>
+                    <p class="b-form__text i-text_center i-mb_20 b-form__text_result">Ваша заявка принята. Спасибо!</p>
+                    <form action="" class="b-form__data">
+                        <div>
+                            <input type="tel" class="b-form__control j-tel i-mb_15" required placeholder="Телефон*">
+                            <input type="hidden" name="reqid" value="Клиенты">
+                        </div>
+                        <div>
+                            <button type="submit" class="b-btn b-btn_block j-submit">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="b-modal__close"></div>
+            </div>
+        </div>
+    </body>
+</html>

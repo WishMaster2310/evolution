@@ -1,0 +1,28 @@
+<div class="b-feedGallery__wrapper">
+	<div class="b-container">
+		<h2 class="b-h1 i-text_center i-white">Отзывы наших клиентов</h2>
+
+		<div class="b-feedGallery">
+			{% for slide in base.feeds  %}
+				<!-- item -->
+				<div class="b-feedGallery__item b-feedGallery__item_{{ loop.index }}">
+					<div class="b-feedGallery__item-inner">
+						<div class="b-feedGallery__item-col b-feedGallery__item-col_left">
+							<div class="b-preson">
+								<div class="b-person__img">
+									<img src="{{ base.STATIC_URL }}img/{{ slide.photo }}" alt="{{ slide.name }}">
+								</div>
+								<div class="b-person__name">{{ slide.name }}</div>
+								<div class="b-person__post">{{ slide.post }}</div>
+							</div>
+						</div>
+						<div class="b-feedGallery__item-col b-feedGallery__item-col_right">{{ slide.text|safe }}</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+
+	
+</div>

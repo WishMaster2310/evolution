@@ -1,0 +1,130 @@
+.b-promoproducts {
+	padding: 1.667em 0;
+	background: url(../img/promoproducts.jpg) no-repeat center top;
+	.background-size(cover);
+
+}
+
+.b-promoproduct {
+	border-bottom: 2px solid #fff;
+	.transition(all .3s ease-in-out);
+
+	&__header {
+		background-color: @gray;
+		font-size: 1.333em;
+		line-height: 1.2;
+		text-align: center;
+		padding: 0.625em 10px;
+	}
+
+	&__content {
+		background-color: #fff;
+		padding: 1em;
+		//.transition(all .3s ease-in-out);
+
+		&-price {
+			font-weight: bold;
+			color: @orange;
+			margin-bottom: 1em;
+			margin-top: .5em;
+			text-align: center;
+			font-size: 1.333em;
+		}
+
+		&-list {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			> li {
+				margin-bottom: 1em;
+				font-size: 0.889em;
+				line-height: 1.2;
+				padding-left: 20px;
+				position: relative;
+
+
+				&:before  {
+					.b-icon();
+					.b-icon__check();
+					content: "";
+					position: absolute;
+					top: 0.250em;
+					left: 0;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	&__footer {
+		padding: 1em;
+		background-color: #fff;
+
+	}
+    &_selected {
+    	border: 2px solid @yellow !important;
+    }
+	&_selected &__header {
+		background-color: @yellow;
+	}
+
+	&_selected &__content-price {
+		color: #000;
+	}
+
+	&_sale {
+		position: relative;	
+
+		&:before {
+			position: absolute;
+			top: -4px;
+			right: -4px;;
+			background: url(../img/sale.png) no-repeat center top;
+			content: "";
+			width: 75px;
+			height: 75px;
+		}
+	}
+
+	&__gift {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+
+		&-wrapper {
+			margin: 20px 0 0 0;
+			padding-left: 20px;
+		}
+
+
+		&-icon {
+			display: table-cell;
+			vertical-align: middle;
+			width: 56px;
+			text-align: left;
+		}
+
+		&-data {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: left;
+			font-weight: bold;
+			font-size: 16px;
+		}
+	}
+
+	&:hover  {
+		.transform(translateY(-10px));
+		.box-shadow(0px 7px 20px -8px #000000)
+	}
+}
+
+@media (max-width: @screen-md-min) {
+    .b-promoproduct {
+		margin-bottom: 20px;
+    }
+}

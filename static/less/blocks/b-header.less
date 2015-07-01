@@ -1,0 +1,84 @@
+.b-header {
+	padding-top: 1.667em;
+	padding-bottom: 1.389em;
+
+	&__phone {
+		text-align: right;
+
+		&-number {
+			font-size: 1.667em; // 30px
+			line-height: 1;
+			margin-bottom: 0.167em;
+		}
+
+		&-info {
+			font-size: 0.833em;
+		}
+	}
+
+	&__logo {
+		display: inline-block;
+		outline: none;
+		border: 0;
+		text-decoration: none;
+		position: relative;
+		margin-top: -.9em;
+		color: inherit;
+		position: 	relative;	
+		z-index: 101;
+		background: #fff;
+
+
+		&-name {
+			display: block;
+			font-size: 1.667em; // 30px
+			line-height: 1;
+			margin-bottom: 0.167em;
+
+			ins {
+				text-decoration: none;
+			}
+		}
+
+		&-info {
+			font-size: 0.833em;
+			display: block;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+.b-sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	width: 100%;	
+	z-index: 100;
+	background: #fff;	
+}
+
+.b-logoTreangle {
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: -10px;
+	right: 0;
+	border: 1px solid #000;
+}
+
+@media (max-width: @screen-sm-min) {
+    .b-header {
+    	&__logo { 
+			margin-bottom: 1.333em;
+    	}
+
+    	&__phone {
+    		text-align: left;
+    	}
+    }
+}

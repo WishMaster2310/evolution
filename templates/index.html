@@ -1,0 +1,39 @@
+{% extends '__base.html' %}
+
+{% block page %}
+	{% include 'blocks/__hero.html' %}
+	{% include 'blocks/__advantages.html' %}
+	{% include 'blocks/__promo-products.html' %}
+	{% include 'blocks/__form1.html' %}
+	{% include 'blocks/__slider.html' %}
+	{% include 'blocks/__support.html' %}
+	{% include 'blocks/__form2.html' %}
+	{% include 'blocks/__feedGallery.html' %}
+	{% include 'blocks/__clients.html' %}
+	{% include 'blocks/__form2.html' %}
+	{% include 'blocks/__map.html' %}
+{% endblock %}
+
+{% block page_footer %}
+	<div style="display: none;">
+		<div class="b-modal b-modal_form" id="modalForm1">
+			{% include 'blocks/__modal_form.html' %}
+			  <div class="b-modal__close"></div>
+		</div>
+
+		<div class="b-modal b-modal_form" id="modalForm2">
+			{% include 'blocks/__modal_form2.html' %}
+			  <div class="b-modal__close"></div>
+		</div>
+
+		<div class="b-modal b-modal_form" id="modalForm3">
+			{% include 'blocks/__modal_form3.html' %}
+			  <div class="b-modal__close"></div>
+		</div>
+
+		<div class="b-modal b-modal_form" id="modalForm4">
+			{% include 'blocks/__modal_form4.html' %}
+			  <div class="b-modal__close"></div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+<section class="b-support__wrapper">
+	<div class="b-container">
+		<h2 class="b-h1 i-text_center">Требуется оперативная поддержка?</h2>
+		<ul class="b-support">
+			{% for item in base.support %}
+			<li class="b-support__item">
+				<div class="b-support__item-icon">
+					<i class="b-icon b-icon__{{ item.iconClass }}"></i>
+				</div>
+				<div class="b-support__item-title">{{ item.title|safe }}</div>
+				<div class="b-support__item-text">{{ item.text|safe }}</div>
+			</li>
+				
+			{% endfor %}
+		</ul>
+	</div>
+</section>

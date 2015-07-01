@@ -1,0 +1,31 @@
+<section class="b-slider__section">
+	<div class="b-container">
+		<h2 class="b-h1 i-text_center">Думаете как подготовить программу для вашего бизнеса?</h2>
+
+		<div class="b-slider">
+			{% for slide in base.slider  %}
+				<!-- item -->
+				<div class="b-slider__item b-slider__item_{{ loop.index }}">
+					<div >
+						<div class="b-slider__item-img">
+							<img src="{{ base.STATIC_URL }}img/{{ slide.img }}" alt="{{ slide.title }}">
+						</div>
+						<div class="b-row">
+							<div class="b-col_md_7">
+								<h2 class="b-slider__item-title i-orange i-bold">{{ slide.title|safe }}</h2>
+								<p class="b-slider__item-text">{{ slide.text|safe }}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<ul class="b-slider__menu">
+			{% for slide in base.slider  %}
+				<li class="b-slider__menu-item">
+					<a href="#" class="b-slider__menu-item--link" data-slide="{{ loop.index }}">{{ slide.menu }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

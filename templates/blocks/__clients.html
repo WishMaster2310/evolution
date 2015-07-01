@@ -1,0 +1,18 @@
+<div class="b-clients__wrapper">
+	<div class="b-container">
+		<h2 class="b-h1 i-text_center">Мы работаем с компаниями из разных отраслей</h2>
+		<div class="b-clients">
+			{% for client in base.clients %}
+				<div class="b-clients__item b-clients__item_{{ loop.index }} j-modal"  data-target="#modalForm4" >
+					<div class="b-clients__item-inner">
+						<img src="{{ base.STATIC_URL }}img/{{ client.img_hover }}" alt="" class="b-clients__item-img_hover">
+						<img src="{{ base.STATIC_URL }}img/{{ client.img }}"  alt="" class="b-clients__item-img">
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="b-clients__progress">
+		<div class="b-clients__progress-bar"></div>
+	</div>
+</div>

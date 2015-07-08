@@ -43,32 +43,32 @@
 		{
 			"title": "Профессионалы",
 			"text": "Наличие всех необходимых статусов и&nbsp;обширный опыт",
-			"iconClass": "case"
+			"icon": "case.png"
 		},
 		{
 			"title": "Оптимальная тарификация",
 			"text": "Как месячные пакеты, так и&nbsp;поминутные",
-			"iconClass": "culc"
+			"icon": "culc.png"
 		},
 		{
 			"title": "Гарантия на&nbsp;все работы",
 			"text": "включая бесперебойность работы системы",
-			"iconClass": "secure"
+			"icon": "secure.png"
 		},
 		{
 			"title": "Прозрачность выполнения проекта",
 			"text": "Task Manager и&nbsp;оперативная отчетность",
-			"iconClass": "folder"
+			"icon": "folder.png"
 		},
 		{
 			"title": "Доступность 24/7",
 			"text": "Возможность связаться с&nbsp;нами в&nbsp;любое время  и&nbsp;по любому каналу",
-			"iconClass": "1s"
+			"icon": "1s.png"
 		},
 		{
 			"title": "Обучение пользователей",
 			"text": "Проведение обучения для&nbsp;пользователей",
-			"iconClass": "study2"
+			"icon": "study2.png"
 		}
 	],
 	"feeds": [
@@ -200,6 +200,28 @@
 		    "name": "Создание сайтов на 1С Bitrix",
 		    "url": "#",
 		    "mod": "selected"
+		}
+	],
+	"advantages": [
+		{
+			"title": "Бесплатно",
+			"text": "поможем выбрать продукт",
+			"icon": "search.png"
+		},
+		{
+			"title": "Бесплатно",
+			"text": "установим <br /> и&nbsp;обучим",
+			"icon": "study.png"
+		},
+		{
+			"title": "1 день",
+			"text": "время доставки продукта",
+			"icon": "delivery.png"
+		},
+		{
+			"title": "3 месяца",
+			"text": "техподдержки в&nbsp;подарок",
+			"icon": "pistons.png"
 		}
 	]
 }

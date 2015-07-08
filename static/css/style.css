@@ -1487,6 +1487,15 @@ width: 100%;
   bottom: 0;
   margin: auto;
 }
+.b-advantages__item-icon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  margin: auto;
+}
 @media (max-width: 992px) {
   .b-advantages__item {
     margin-bottom: 1.333em;
@@ -1544,7 +1553,7 @@ width: 100%;
   background-repeat: no-repeat;
   background-image: url(../img/sprite.png);
   display: inline-block;
-  background-position: -138px -144px;
+  background-position: 0px -31px;
   width: 13px;
   height: 10px;
   content: "";
@@ -1752,13 +1761,14 @@ width: 100%;
   margin-bottom: 18px;
   overflow: hidden;
 }
-.b-support__item-icon i {
+.b-support__item-icon img {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
+  max-width: 100%;
 }
 .b-support__item-title {
   font-size: 1.333em;
@@ -2123,102 +2133,25 @@ width: 100%;
     display: block;
   }
 }
-.b-icon__1s {
-  display: inline-block;
-  background-position: -177px -104px;
-  width: 44px;
-  height: 42px;
-  content: "";
-}
-.b-icon__case {
-  display: inline-block;
-  background-position: -66px -60px;
-  width: 45px;
-  height: 41px;
-  content: "";
-}
 .b-icon__check {
   display: inline-block;
-  background-position: -138px -144px;
+  background-position: 0px -31px;
   width: 13px;
   height: 10px;
   content: "";
 }
 .b-icon__close {
   display: inline-block;
-  background-position: -138px -117px;
+  background-position: -40px 0px;
   width: 17px;
   height: 17px;
   content: "";
 }
-.b-icon__culc {
-  display: inline-block;
-  background-position: -177px -50px;
-  width: 44px;
-  height: 44px;
-  content: "";
-}
-.b-icon__delivery {
-  display: inline-block;
-  background-position: 0px 0px;
-  width: 56px;
-  height: 44px;
-  content: "";
-}
-.b-icon__folder {
-  display: inline-block;
-  background-position: -123px 0px;
-  width: 44px;
-  height: 53px;
-  content: "";
-}
 .b-icon__menu {
   display: inline-block;
-  background-position: 0px -166px;
+  background-position: 0px 0px;
   width: 30px;
   height: 21px;
-  content: "";
-}
-.b-icon__pistons {
-  display: inline-block;
-  background-position: -66px 0px;
-  width: 47px;
-  height: 50px;
-  content: "";
-}
-.b-icon__present {
-  display: inline-block;
-  background-position: -123px -63px;
-  width: 41px;
-  height: 42px;
-  content: "";
-}
-.b-icon__search {
-  display: inline-block;
-  background-position: 0px -54px;
-  width: 46px;
-  height: 53px;
-  content: "";
-}
-.b-icon__secure {
-  display: inline-block;
-  background-position: -177px 0px;
-  width: 52px;
-  height: 40px;
-  content: "";
-}
-.b-icon__study {
-  display: inline-block;
-  background-position: -69px -117px;
-  width: 59px;
-  height: 39px;
-  content: "";
-}
-.b-icon__study2 {
-  display: inline-block;
-  background-position: 0px -117px;
-  width: 59px;
-  height: 39px;
   content: "";
 }
 @charset "UTF-8";

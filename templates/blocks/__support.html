@@ -5,12 +5,11 @@
 			{% for item in base.support %}
 			<li class="b-support__item">
 				<div class="b-support__item-icon">
-					<i class="b-icon b-icon__{{ item.iconClass }}"></i>
+					<img src="{{ base.STATIC_URL }}img/{{ item.icon }}" alt="">
 				</div>
 				<div class="b-support__item-title">{{ item.title|safe }}</div>
 				<div class="b-support__item-text">{{ item.text|safe }}</div>
 			</li>
-				
 			{% endfor %}
 		</ul>
 	</div>

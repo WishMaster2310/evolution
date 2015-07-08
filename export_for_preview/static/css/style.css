@@ -1487,6 +1487,15 @@ width: 100%;
   bottom: 0;
   margin: auto;
 }
+.b-advantages__item-icon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  margin: auto;
+}
 @media (max-width: 992px) {
   .b-advantages__item {
     margin-bottom: 1.333em;
@@ -1752,13 +1761,14 @@ width: 100%;
   margin-bottom: 18px;
   overflow: hidden;
 }
-.b-support__item-icon i {
+.b-support__item-icon img {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
+  max-width: 100%;
 }
 .b-support__item-title {
   font-size: 1.333em;

@@ -216,14 +216,18 @@ $(document).ready(function() {
 
 	setTimeout(function() {
 		promoproductHeight ();
-		heroScreens (); 
+		
 		advantagesFrictions ();
 
 	}, 300);
 
 	setTimeout(function() {
-		initYaMap ()
+		heroScreens (); 
 	}, 1000);
+
+	setTimeout(function() {
+		initYaMap ()
+	}, 3000);
 
 	initCarousel ();
 	initFeedGallery ();

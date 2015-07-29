@@ -70,35 +70,26 @@ function heroScreens () {
 function initCarousel ()  {
 	var carousel = $('.b-slider');
 
-	var timer;
+	//var timer;
 	
 	carousel.owlCarousel({
 		items: 1,
 		loop: true,
-		autoplay: true
+		autoplay: true,
+	    autoplayTimeout: 5000,
+	    autoplayHoverPause: true,
 	});
 
 	carousel
 		.on('changed.owl.carousel', function(event) {
 			$('.b-slider__menu-item').removeClass('active');
 		    $('.b-slider__menu-item').eq(event.page.index).addClass('active');
-		})
-
-		.on('mouseenter', function() {
-			carousel.trigger('stop.owl.autoplay');
-			clearTimeout(timer);
-		})
-
-		.on('mouseleave', function() {
-
-			timer = setTimeout(function() {
-				carousel.trigger('play.owl.autoplay');
-			}, 3000);
-			
 		});
 
 	$('.b-slider__menu-item--link').on('click', function(e) {
 		e.preventDefault();
+		//clearTimeout(timer);
+		carousel.trigger('stop.owl.autoplay');
 		var slide = $(this).data('slide') - 1;
 		$(this).closest('.b-slider__menu-item').addClass('active').siblings().removeClass('active');
 		carousel.trigger('to.owl.carousel', [slide, 300]);
@@ -108,27 +99,17 @@ function initCarousel ()  {
 
 function initFeedGallery () {
 	var feedGallery = $('.b-feedGallery'); 
-	var timer;
+
 
 	feedGallery.owlCarousel({
 		items: 1,
 		margin: 20,
 		dotsEach: true,
 		loop: true,
-		autoplay: true
+		autoplay: true,
+	    autoplayTimeout: 5000,
+	    autoplayHoverPause: true
 	});
-
-	feedGallery
-		.on('mouseenter', function() {
-			feedGallery.trigger('stop.owl.autoplay');
-			clearTimeout(timer);
-		})
-
-		.on('mouseleave', function() {
-			timer = setTimeout(function() {
-				feedGallery.trigger('play.owl.autoplay');
-			}, 3000);
-		});
 }
 
 
@@ -158,13 +139,14 @@ function initYaMap () {
 
 function initClientsGallery () {
 	var clientsGallery = $('.b-clients');
-	var timer;
 
 	clientsGallery.owlCarousel({
 		items: 4,
 		slideBy: 4,
 		margin: 50,
 		autoplay: true,
+		autoplayTimeout: 5000,
+	    autoplayHoverPause: true,
 		touchDrag: false,
 		mouseDrag: false,
 		loop: true,
@@ -196,18 +178,6 @@ function initClientsGallery () {
 		.on('changed.owl.carousel', function(event) {
 			var p = Math.floor(( (event.page.index + 1) / event.page.count) * 100) + '%';
 			$('.b-clients__progress-bar').css('width', p);
-		})
-		.on('mouseenter', function() {
-			clientsGallery.trigger('stop.owl.autoplay');
-			clearTimeout(timer);
-		})
-
-		.on('mouseleave', function() {
-
-			timer = setTimeout(function() {
-				clientsGallery.trigger('play.owl.autoplay');
-			}, 3000);
-
 		});
 }
 

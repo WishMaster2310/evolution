@@ -27,8 +27,9 @@ FIXTURE = 'fixture'
 
 def load_fixture(directory=None, page=None, path=None):
     base_fixture = 'fixture/__base.json'
-    if directory or page:
-        page_fixture = '%s.json' % os.path.join(FIXTURE, directory, page)
+
+    if page:
+        page_fixture = '%s.json' % os.path.join(FIXTURE, page)
     elif path:
         page_fixture = '%s.json' % path
     else:
@@ -43,6 +44,7 @@ def load_fixture(directory=None, page=None, path=None):
 def load(fixture_name):
     try:
         fixture = open(fixture_name)
+        print 'fixture_name ----------->' + fixture_name 
     except IOError:
         return {}
     else:

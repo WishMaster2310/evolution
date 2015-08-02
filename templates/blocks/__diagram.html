@@ -1,0 +1,22 @@
+
+<section class="b-diagram__section">
+	<div class="b-container">
+		<h2 class="b-h1 i-text_center">Думаете как провести эффективное внедрение?</h2>
+		<div class="b-diagram__wrapper">
+			{% for item in base.steps %}
+				<div class="b-diagram">
+					<div class="b-diagram__inner">
+						<div class="b-diagram__count">{{ loop.index }}</div>
+						<div class="b-diagram__data">
+							<div class="b-diagram__data-title">{{ item.name }}</div>
+							<div class="b-diagram__data-info">{{ item.info }}</div>
+						</div>
+						<div class="b-diagram__value">
+							<span class="j-counter">{{ item._val }}</span>%
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

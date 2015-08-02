@@ -1,0 +1,19 @@
+<section class="b-advantages">
+	<div class="b-container">
+		<div class="b-row">
+			{% for item in base.advantages2 %}
+				<div class="b-col_md_3 b-col_xs_6 ">
+					<figure class="b-advantages__item">
+						<div class="b-advantages__item-icon">
+							<img src="{{ base.STATIC_URL }}img/{{ item.icon }}" alt="">
+						</div>
+						<figcaption class="b-advantages__item-data">
+							<div class="b-advantages__item-title i-bold">{{ item.title|safe }}</div>
+							<div class="b-advantages__item-text">{{ item.text|safe }}</div>
+						</figcaption>
+					</figure>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

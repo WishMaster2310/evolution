@@ -1344,6 +1344,21 @@ width: 100%;
   line-height: 1.2;
   margin-bottom: 1.042em;
 }
+.b-hero__img {
+  position: absolute;
+  top: 0;
+  right: -60px;
+  bottom: 0;
+  left: 45%;
+  margin: auto 0;
+}
+.b-hero__img img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
 .b-hero__screens {
   position: absolute;
   display: none;
@@ -1376,7 +1391,8 @@ width: 100%;
   z-index: 1;
 }
 @media (max-width: 992px) {
-  .b-hero__screens {
+  .b-hero__screens,
+  .b-hero__img {
     display: none !important;
   }
 }
@@ -2090,6 +2106,101 @@ width: 100%;
     left: 0;
   }
 }
+.b-diagram {
+  margin-bottom: 2em;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=(0));
+  opacity: 0;
+}
+.b-diagram__wrapper {
+  padding-right: 17%;
+  padding-left: 17%;
+}
+.b-diagram_animated {
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=(100));
+  opacity: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.b-diagram:nth-child(5n + 5),
+.b-diagram:nth-child(4n + 9),
+.b-diagram:first-child {
+  padding-left: 0;
+}
+.b-diagram:nth-child(2n + 2) {
+  padding-left: 8.5%;
+}
+.b-diagram:nth-child(4n + 3) {
+  padding-left: 17%;
+}
+.b-diagram__inner {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.b-diagram__count {
+  display: table-cell;
+  vertical-align: top;
+  width: 48px;
+  font-size: 1.333em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ff6c00;
+}
+.b-diagram__data {
+  display: table-cell;
+  vertical-align: top;
+}
+.b-diagram__data-info {
+  display: none;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.b-diagram__data-title {
+  font-size: 1.333em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.b-diagram__value {
+  display: table-cell;
+  vertical-align: top;
+  width: 60px;
+  text-align: right;
+  color: #ff6c00;
+  font-weight: bold;
+}
+.b-diagram:hover .b-diagram__data-info {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+@media (max-width: 768px) {
+  .b-diagram__wrapper {
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+  .b-diagram:nth-child(5n + 5),
+  .b-diagram:nth-child(4n + 9),
+  .b-diagram:first-child {
+    padding-left: 0;
+  }
+  .b-diagram:nth-child(2n + 2) {
+    padding-left: 0;
+  }
+  .b-diagram:nth-child(4n + 3) {
+    padding-left: 0;
+  }
+}
 .i-bold {
   font-weight: bold;
 }
@@ -2124,6 +2235,21 @@ width: 100%;
 .i-mb_20 {
   margin-bottom: 20px;
   margin-bottom: 1.111rem;
+}
+.i-mb_40 {
+  margin-bottom: 40px;
+  margin-bottom: 2.222rem;
+}
+.i-mt_10 {
+  margin-top: 10px;
+}
+.i-mt_15 {
+  margin-top: 15px;
+  margin-top: 0.833rem;
+}
+.i-mt_20 {
+  margin-top: 20px;
+  margin-top: 1.111rem;
 }
 .i-visible_sm {
   display: none;

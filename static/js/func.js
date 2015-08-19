@@ -224,6 +224,9 @@ $(document).ready(function() {
 		var wrapper = $(this).closest('.b-form');
 		var that = $(this);
 
+		var metric = form.find('.j-metric').val();
+
+
 		// TO DO: replace test route jsonstub.com && setRequestHeaders data
 
 		if (form.find('.j-tel').val()) {
@@ -237,10 +240,14 @@ $(document).ready(function() {
 			        request.setRequestHeader('JsonStub-Project-Key', 'dc78b345-4e21-4eaf-bf37-a6656dc93a4b');
 			    }
 			}).done(function() {
+
 				wrapper.addClass('i-active');
 				$(that).attr('disabled', true).addClass('i-disabled');
 			}).fail(function() {
+
 				alert('При отправке формы произошла ошибка \nПожалуйста, повторите попытку позже.')
+			}).always(function() {
+				yaCounter28117596.reachGoal(metric); return true;
 			})
 		} else {
 			form.find('.j-tel').focus();

@@ -1,10 +1,12 @@
 {% extends '__base.html' %}
 
 {% block page %}
+	{% set form_ctx = 'dsds' %}
 	{% include 'blocks/__hero.html' %}
 	{% include 'blocks/__advantages.html' %}
 	{% include 'blocks/__promo-products.html' %}
-	{% include 'blocks/__form1.html' %}
+	{% set form_ctx = 'dsds' %}
+	{% include 'blocks/__form1.html' with context%}
 	{% include 'blocks/__slider.html' %}
 	{% include 'blocks/__support.html' %}
 	{% include 'blocks/__form2.html' %}

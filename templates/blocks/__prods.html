@@ -1,0 +1,14 @@
+
+
+<section class="b-prods-wrapper">
+	<div class="b-container">
+		<h2 class="b-h1 i-white i-text_center">Выберете продукт, который подходит именно вам</h2>
+		<ul class="b-prods">
+		{% for item in base.prods %}
+			<li class="b-prods__item">
+				<a class="b-prods__link" href="{{ item.url }}">{{ item.name|safe }}</a>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
+</section>

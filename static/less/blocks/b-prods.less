@@ -1,0 +1,48 @@
+.b-prods {
+	list-style-type: none;
+	margin: 0 0 0 -10%;
+
+	&-wrapper {
+		padding: 1.667em 0;
+		background: url(../img/prods-bg.jpg) no-repeat center top;
+		.background-size(cover);
+	}
+
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		width: 40%;
+		margin: 0 -.25em 30px 10%;
+	}
+
+	&__link {
+		font-size: 1.27em;
+		font-weight: bold;
+		color: #fff;
+		text-decoration: none;
+		display: block;
+		border-bottom: 3px solid @yellow;
+		.transition(all .3s ease-in-out);
+		padding-right: 20px;
+		padding-bottom: 10px;
+
+		&:hover {
+			color: @orange;
+			border-bottom-color: fade(@yellow, 25%);
+		}
+
+
+	}
+
+	@media (max-width: @screen-sm-min) {
+		margin-left: 0;
+
+		&__item {
+			width: 100%;
+			display: block;
+			margin-right: 0;
+			margin-left: 0;
+			text-align: center;
+		}
+	}
+}

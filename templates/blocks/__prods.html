@@ -6,7 +6,7 @@
 		<ul class="b-prods">
 		{% for item in base.prods %}
 			<li class="b-prods__item">
-				<a class="b-prods__link" href="{{ item.url }}">{{ item.name|safe }}</a>
+				<a class="b-prods__link" target="_blank" href="{{ item.url }}">{{ item.name|safe }}</a>
 			</li>
 		{% endfor %}
 		</ul>

@@ -24,21 +24,25 @@
 	"mod": false,
 	"title": "Торговое <br>оборудование",
 },
+
 {
 	"img": "franch6.png",
 	"mod": false,
 	"title": "Создание сайтов <br> на 1С Bitrix",
 },
+
 {
 	"img": "franch7.png",
 	"mod": false,
 	"title": "Облачный 1С",
 },
+
 {
 	"img": "franch8.png",
 	"mod": "wide",
-	"title": "1C Outsourcing <br>(предоставление 1С специалистов)",
+	"title": "Аренда программистов 1С",
 }
+
 ] -%}
 <div class="b-franch__section">
 	<div class="b-container">
@@ -46,17 +50,14 @@
 		<h2 class="b-h1 i-mb_10">1С Развитие - франчайзи 1С</h2>
 		<p class="i-mb_40">Мы предоставляем следующие услуги для наших клиентов</p>
 		</div>	
-		<div class="b-franch__list" data-masonry='{ "itemSelector": ".b-franch__list-item", "percentPosition": "true", "columnWidth": ".b-franch__list-sizer" , "gutter": ".b-franch__list-gutter"}'>
-		<div class="b-franch__list-sizer"></div>
-		<div class="b-franch__list-gutter"></div>
+		<div class="b-franch__list" >
 		{%- for item in items  %}
-			
-			<div class="b-franch__list-item {%- if item.mod %} b-franch__list-item--{{ item.mod }}{% endif -%}">
+			<div class="b-franch__list-item b-franch__list-item--{{ loop.index }} {%- if item.mod %} b-franch__list-item--{{ item.mod }}{% endif -%}">
 				<a class="b-franch" href="#">
 					<div class="b-franch__imgbox">
 						<img class="b-franch__img" src="{{ base.STATIC_URL }}img/franchaizing/{{ item.img }}" alt="">
 					</div>
-					<div class="b-franch__title">{{ item.title|safe }}</div>
+					<div class="b-franch__title"><span class="b-franch__title-inner">{{ item.title|safe }}</span></div>
 				</a>
 			</div>
 		{% endfor -%}

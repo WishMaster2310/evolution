@@ -2251,6 +2251,7 @@ width: 100%;
 }
 .b-franch {
   position: absolute;
+  background-color: #fff;
   top: 0;
   left: 0;
   bottom: 0;
@@ -2259,9 +2260,9 @@ width: 100%;
   text-decoration: none;
   color: inherit;
   display: block;
-  -webkit-box-shadow: inset 0 0 0px 4px #ffffff;
-  -moz-box-shadow: inset 0 0 0px 4px #ffffff;
-  box-shadow: inset 0 0 0px 4px #ffffff;
+  -webkit-box-shadow: inset 0 0 0px 2px #ffffff;
+  -moz-box-shadow: inset 0 0 0px 2px #ffffff;
+  box-shadow: inset 0 0 0px 2px #ffffff;
   -webkit-transition: box-shadow 0.2s ease-in-out;
   -moz-transition: box-shadow 0.2s ease-in-out;
   -o-transition: box-shadow 0.2s ease-in-out;
@@ -2293,81 +2294,17 @@ width: 100%;
 .b-franch__title {
   left: 0;
   right: 0;
-  -moz-transform: translateY(80%);
-  /* Р”Р»СЏ Firefox */
-  -ms-transform: translateY(80%);
-  /* Р”Р»СЏ IE */
-  -webkit-transform: translateY(80%);
-  /* Р”Р»СЏ Safari, Chrome, iOS */
-  -o-transform: translateY(80%);
-  /* Р”Р»СЏ Opera */
-  transform: translateY(80%);
+  bottom: 0;
   position: absolute;
-  -webkit-transition: transform 0.5s ease-in-out;
-  -moz-transition: transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out;
-  -ms-transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  height: 100%;
+  padding: 9px;
   text-align: center;
   z-index: 2;
-  top: 0;
+  min-height: 54px;
 }
-.b-franch__title-inner {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  -moz-transform: translateY(0);
-  /* Р”Р»СЏ Firefox */
-  -ms-transform: translateY(0);
-  /* Р”Р»СЏ IE */
-  -webkit-transform: translateY(0);
-  /* Р”Р»СЏ Safari, Chrome, iOS */
-  -o-transform: translateY(0);
-  /* Р”Р»СЏ Opera */
-  transform: translateY(0);
-}
-.b-franch:hover .b-franch__title {
-  background-color: rgba(255, 108, 0, 0.9);
-  -moz-transform: translateY(0%) !important;
-  /* Р”Р»СЏ Firefox */
-  -ms-transform: translateY(0%) !important;
-  /* Р”Р»СЏ IE */
-  -webkit-transform: translateY(0%) !important;
-  /* Р”Р»СЏ Safari, Chrome, iOS */
-  -o-transform: translateY(0%) !important;
-  /* Р”Р»СЏ Opera */
-  transform: translateY(0%) !important;
-  color: #fff;
-  font-weight: bold;
-}
-.b-franch:hover .b-franch__title-inner {
-  top: 50%;
-  -moz-transform: translateY(-50%);
-  /* Р”Р»СЏ Firefox */
-  -ms-transform: translateY(-50%);
-  /* Р”Р»СЏ IE */
-  -webkit-transform: translateY(-50%);
-  /* Р”Р»СЏ Safari, Chrome, iOS */
-  -o-transform: translateY(-50%);
-  /* Р”Р»СЏ Opera */
-  transform: translateY(-50%);
-  -webkit-transition: transform 0.7s linear;
-  -moz-transition: transform 0.7s linear;
-  -o-transition: transform 0.7s linear;
-  -ms-transition: transform 0.7s linear;
-  transition: transform 0.7s linear;
-}
-.b-franch__list-item--tall .b-franch__title {
-  -moz-transform: translateY(90%);
-  /* Р”Р»СЏ Firefox */
-  -ms-transform: translateY(90%);
-  /* Р”Р»СЏ IE */
-  -webkit-transform: translateY(90%);
-  /* Р”Р»СЏ Safari, Chrome, iOS */
-  -o-transform: translateY(90%);
-  /* Р”Р»СЏ Opera */
-  transform: translateY(90%);
+.b-franch:hover {
+  -webkit-box-shadow: inset 0 0 0px 2px #949494;
+  -moz-box-shadow: inset 0 0 0px 2px #949494;
+  box-shadow: inset 0 0 0px 2px #949494;
 }
 .b-franch__imgbox {
   position: absolute;
@@ -2386,6 +2323,12 @@ width: 100%;
   max-width: 80%;
   max-height: 80%;
   position: absolute;
+}
+.b-franch__img--desktop {
+  display: inline-block;
+}
+.b-franch__img--mobile {
+  display: none;
 }
 .b-franch__section {
   background-image: url(../img/herobg.jpg);
@@ -2414,7 +2357,6 @@ width: 100%;
   position: relative;
   margin-right: 1%;
   float: left;
-  background-color: #fff;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -2496,16 +2438,13 @@ width: 100%;
   .b-franch__list-item--tall:before {
     padding-top: 100%;
   }
-  .b-franch__list-item--tall .b-franch__title {
-    -moz-transform: translateY(80%);
-    /* Р”Р»СЏ Firefox */
-    -ms-transform: translateY(80%);
-    /* Р”Р»СЏ IE */
-    -webkit-transform: translateY(80%);
-    /* Р”Р»СЏ Safari, Chrome, iOS */
-    -o-transform: translateY(80%);
-    /* Р”Р»СЏ Opera */
-    transform: translateY(80%);
+}
+@media (max-width: 760px) {
+  .b-franch__img--mobile {
+    display: inline-block;
+  }
+  .b-franch__img--desktop {
+    display: none;
   }
 }
 .i-bold {

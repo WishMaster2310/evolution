@@ -12,11 +12,13 @@
 },
 {
 	"img": "franch3.png",
+	"img2": "franch3_moby.png",
 	"mod": "tall",
 	"title": "Сопровождение 1C",
 },
 {
 	"img": "franch4.png",
+	"img2": "franch4_moby.png",
 	"mod": "tall",
 	"title": "Отраслевая <br>автоматизация",
 },
@@ -56,8 +58,13 @@
 			<div class="b-franch__list-item b-franch__list-item--{{ loop.index }} {%- if item.mod %} b-franch__list-item--{{ item.mod }}{% endif -%}">
 				<a class="b-franch" href="#">
 					<div class="b-franch__imgbox">
-						<img class="b-franch__img" src="{{ base.STATIC_URL }}img/franchaizing/{{ item.img }}" alt="">
-						<img class="b-franch__img" src="{{ base.STATIC_URL }}img/franchaizing/{{ item.img }}" alt="">
+						{%- if item.img2 %}
+							<img class="b-franch__img b-franch__img--desktop" src="{{ base.STATIC_URL }}img/franchaizing/{{ item.img }}" alt="">
+							<img class="b-franch__img b-franch__img--mobile" src="{{ base.STATIC_URL }}img/franchaizing/{{ item.img2 }}" alt="">
+							{% else -%}
+							<img class="b-franch__img" src="{{ base.STATIC_URL }}img/franchaizing/{{ item.img }}" alt="">
+						{% endif -%}
+						
 					</div>
 					<div class="b-franch__title">{{ item.title|safe }}</div>
 				</a>

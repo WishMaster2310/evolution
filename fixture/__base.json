@@ -1,6 +1,6 @@
 {
 	"company": "1С Развитие",
-	"STATIC_URL": "/static/",
+	"STATIC_URL": "./static/",
 	"slider": [
 		{
 			"title": "Лучшие профессионалы в одной команде",

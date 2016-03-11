@@ -6,6 +6,7 @@
 },
 {
 	"img": "franch2.png",
+	"img2": "franch2_moby.png",
 	"mod": "wide",
 	"title": "Внедрение 1C",
 },
@@ -56,8 +57,9 @@
 				<a class="b-franch" href="#">
 					<div class="b-franch__imgbox">
 						<img class="b-franch__img" src="{{ base.STATIC_URL }}img/franchaizing/{{ item.img }}" alt="">
+						<img class="b-franch__img" src="{{ base.STATIC_URL }}img/franchaizing/{{ item.img }}" alt="">
 					</div>
-					<div class="b-franch__title"><span class="b-franch__title-inner">{{ item.title|safe }}</span></div>
+					<div class="b-franch__title">{{ item.title|safe }}</div>
 				</a>
 			</div>
 		{% endfor -%}
